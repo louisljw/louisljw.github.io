@@ -10,7 +10,7 @@
     <script>
         var url = window.location.href;
         var code = getUrlParam(url);
-        var getUrlParam = function(value) {
+        function getUrlParam(value) {
             var result = "";
             var reg = new RegExp("(^|&)"+ value +"=([^&]*)(&|$)");
             result = url.search.substr(1).match(reg);
