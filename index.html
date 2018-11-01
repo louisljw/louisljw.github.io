@@ -3,25 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>微信静默登录</title>
+    <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    Hello World~
     <script>
-        var url = window.location.href;
-        var code = getUrlParam(url);
-        function getUrlParam(value) {
-            var result = "";
-            var reg = new RegExp("(^|&)"+ value +"=([^&]*)(&|$)");
-            result = window.location.search.substr(1).match(reg);
-            if(result!=null) return unescape(result[2]);
-            return null;
-        }
-        if(code == "" || code == null){
-            window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe04ed87ffa03b855&redirect_uri='+encodeURI(url)+'&response_type=code&scope=snsapi_base&state=null#wechat_redirect';
-        }else{
-            console.log(code);
-        }
+
     </script>
 </body>
 </html>
